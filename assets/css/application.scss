@@ -1,0 +1,12 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+
+// customize styles
+$brand-primary: #ef8157;
+$primary: $brand-primary;
+
+@import '~bulma';
+
+html {
+  background-color: #f4f3ef;
+}
