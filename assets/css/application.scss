@@ -1,36 +1,42 @@
-@import '~bulma/sass/utilities/initial-variables';
-@import '~bulma/sass/utilities/functions';
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
 
 // customize styles
 
-@import '~bulma';
+@import "~bulma";
 
 html {
   background-color: #f4f3ef;
 }
 
-.page-enter-active, .page-leave-active {
-  transition: opacity .3s;
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s;
 }
 
-.page-enter, .page-leave-to {
+.page-enter,
+.page-leave-to {
   opacity: 0;
 }
 
 #hero-banner {
-  background-image: url('~/assets/img/hero.jpg');
+  background-image: url("~/assets/img/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 
+  .title-bg {
+    padding: 12px 24px;
+    background-color: rgba(255, 255, 255, 0.12);
+    display: inline-block;
+    border-radius: 6px;
+  }
+
   h1 {
     color: #fff;
     font-size: 2rem;
     font-weight: 600;
-    padding: 12px 24px;
-    background-color: rgba(0,0,0,.2);
-    display: inline-block;
   }
 }
 
@@ -39,5 +45,5 @@ html {
   border-radius: 6px;
   margin-top: -70px;
   padding: 1.5rem;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
