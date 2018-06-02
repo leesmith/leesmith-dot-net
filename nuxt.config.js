@@ -14,6 +14,7 @@ module.exports = {
     ]
   },
   css: [
+    '@/assets/css/inter-ui.css',
     'bulma',
     '@/assets/css/application.scss'
   ],
