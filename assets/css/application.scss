@@ -64,3 +64,29 @@ html {
   padding: 1.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
+.headshot {
+  margin: 0 auto 20px;
+  height: calc(80px + 3vw);
+  width: calc(80px + 3vw);
+  border: calc(2px + 0.2vw) solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-size: cover;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-image: url("~/assets/img/headshot.jpg"),
+    linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
+}
+
+.aside-list {
+  text-align: center;
+}
+
+.aside-list li:last-child {
+  border-bottom: none;
+}
+
+.aside-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #dedede;
+}
