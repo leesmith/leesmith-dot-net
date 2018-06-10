@@ -9,9 +9,15 @@ $family-sans-serif: "Inter UI", BlinkMacSystemFont, -apple-system, "Segoe UI",
 $brown: #66615b;
 $brown-invert: findColorInvert($brown);
 $text: $brown;
+$body-color: $text;
 
 @import "~bulma/sass/utilities/derived-variables";
-$addColors: ("brown": ($brown, $brown-invert));
+$addColors: (
+  "brown": (
+    $brown,
+    $brown-invert
+  )
+);
 $colors: map-merge($colors, $addColors);
 
 @import "~bulma";
