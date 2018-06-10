@@ -25,6 +25,12 @@ module.exports = {
   */
   modules: [
     [
+      "@nuxtjs/google-analytics",
+      {
+        id: "UA-117090087-1"
+      }
+    ],
+    [
       "nuxt-fontawesome",
       {
         component: "fa-icon",

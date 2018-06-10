@@ -16,6 +16,7 @@
     "@fortawesome/fontawesome-free-brands": "^5.0.13",
     "@fortawesome/fontawesome-free-regular": "^5.0.13",
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@nuxtjs/google-analytics": "^2.0.2",
     "bulma": "^0.7.1",
     "nuxt": "^1.4.1",
     "nuxt-fontawesome": "^0.2.0"
