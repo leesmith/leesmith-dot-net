@@ -3,9 +3,11 @@
     <section class="hero is-medium" id="hero-banner">
       <div class="hero-body">
         <div class="container">
-          <div class="title-bg">
-            <h1>Lee Smith</h1>
-          </div>
+          <nuxt-link to="/">
+            <div class="title-bg">
+              <h1>Lee Smith</h1>
+            </div>
+          </nuxt-link>
         </div>
       </div>
     </section>
