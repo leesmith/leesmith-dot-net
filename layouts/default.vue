@@ -23,8 +23,9 @@
               <li><nuxt-link to="/"><fa-icon :icon="['fas', 'home']" /> Home</nuxt-link></li>
               <li><nuxt-link to="/about"><fa-icon :icon="['fas', 'user-circle']" /> About</nuxt-link></li>
               <li>
-                <a class="is-size-4" href="https://www.twitter.com/jeremyleesmith" target="_blank" style="margin-right: 24px; color: #1da1f2;"><fa-icon :icon="['fab', 'twitter']" /></a>
-                <a class="is-size-4" href="https://www.github.com/leesmith" target="_blank" style="color: #24292e;"><fa-icon :icon="['fab', 'github']" /></a>
+                <a class="is-size-4" href="https://www.twitter.com/jeremyleesmith" target="_blank" style="margin-right: 2rem; color: #1da1f2;"><fa-icon :icon="['fab', 'twitter']" /></a>
+                <a class="is-size-4" href="https://www.github.com/leesmith" target="_blank" style="margin-right: 2rem; color: #24292e;"><fa-icon :icon="['fab', 'github']" /></a>
+                <a class="is-size-4" href="https://www.linkedin.com/in/leesmith" target="_blank" style="color: #0077b5;"><fa-icon :icon="['fab', 'linkedin']" /></a>
               </li>
             </ul>
           </aside>
