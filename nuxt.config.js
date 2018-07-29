@@ -15,7 +15,7 @@ module.exports = {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
-  css: ["@/assets/css/inter-ui.css", "bulma", "@/assets/css/application.scss"],
+  css: ["@/assets/css/inter-ui.css", "bulma", "@/assets/css/application.scss", "@/node_modules/highlight.js/styles/atom-one-light.css"],
   /*
   ** Customize the progress bar color
   */
@@ -49,9 +49,16 @@ module.exports = {
     ]
   ],
   /*
+  ** Plugins
+  */
+  plugins: [
+    '@/plugins/vue-highlightjs'
+  ],
+  /*
   ** Build configuration
   */
   build: {
+    vendor: ['vue-highlightjs'],
     /*
     ** Run ESLint on save
     */
