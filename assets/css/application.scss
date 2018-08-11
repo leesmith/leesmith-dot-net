@@ -47,22 +47,24 @@ html {
     padding: 12px 24px;
     background-color: rgba(255, 255, 255, 0.12);
     display: inline-block;
-    border-radius: 6px;
+    border-radius: 4px;
   }
 
   h1 {
     color: #fff;
     font-size: 2rem;
     font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 0.35) 0 1px 2px;
   }
 }
 
 #main-content {
   background-color: #fff;
-  border-radius: 6px;
-  margin-top: -70px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  margin-top: -85px;
   padding: 1.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 a.fancy-underline {
