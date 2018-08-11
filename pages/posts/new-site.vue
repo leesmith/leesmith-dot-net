@@ -8,10 +8,23 @@
         this domain wasn't registered so I pulled the trigger. Finally - a domain name I don't hate! But that's a terrible reason to not blog but oh well.
         Now I'm on it!</p>
       <p>
-        I built this site using <a href="http://nuxtjs.org" target="_blank">Nuxt</a>. It's a completely static site, generated from Nuxt and I'm really digging
+        I built this site using <a href="http://nuxtjs.org" target="_blank" rel="noopener">Nuxt</a>. It's a completely static site, generated from Nuxt and I'm really digging
         it. I've also deployed it to Amazon S3. I'll probably be writing a bit about Nuxt and Vue here at first since I'm really enjoying learning these newer
         frontend frameworks. Anyway, thanks for stopping by!
       </p>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: "New site who dis - LeeSmith.net",
+      meta: [
+        { hid: "description", name: "description", content: "New site who dis" }
+      ]
+    };
+  }
+};
+</script>
