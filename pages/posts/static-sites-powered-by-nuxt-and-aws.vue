@@ -150,6 +150,12 @@ export default {
         <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-cloudfront-walkthrough.html" target="_blank" rel="noopener">
         walkthrough</a> for creating and configuring your Cloudfront distribution.
       </p>
+      <p>
+        So far, lighthouse scores look pretty good:
+      </p>
+      <p>
+        <img src="~/assets/img/lighthouse-audit.png" alt="Lighthouse Audit Score" />
+      </p>
       <h3 class="has-text-brown">Deployment</h3>
       <p>
         For the sake of automation, I've put together a simple script for deployment. This script depends on your AWS settings. It creates a .env file if one does not exist
@@ -178,6 +184,9 @@ fi</code></pre>
         You could automate your deploys even further by using a CI/CD service like <a href="https://semaphoreci.com/docs/deploying-to-amazon-s3.html" target="_blank" rel="noreferrer">Semaphore</a>
         so that each push to your master branch kicks off a deploy. This is very similar to what Netlify offers. I could see that being a nice feature when
         working on a larger project.
+      </p>
+      <p>
+        I ran 
       </p>
       <p>
         So far, I've really enjoyed playing around with Nuxt. Hit me up on <a href="https://www.twitter.com/jeremyleesmith" target="_blank" rel="noreferrer"><fa-icon :icon="['fab', 'twitter']" /> Twitter</a>
