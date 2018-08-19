@@ -114,7 +114,7 @@ export default {
       <p>
         So those are some of the basics as far as Nuxt. From here you could generate your site:
       </p>
-      <pre v-highlightjs><code class="bash">nuxt generate</code></pre>
+      <pre v-highlightjs><code class="bash">npm run generate</code></pre>
       <p>
         Nuxt gives you a <code>dist</code> folder containing your generated site files. These are the files you'd push to your static host. Let's see how that works when hosting with Amazon.
       </p>
