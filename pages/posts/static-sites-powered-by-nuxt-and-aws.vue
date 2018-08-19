@@ -22,6 +22,7 @@
         that I appreciate. I've been keeping my eye on Vue for a while and I like what I see so that also played a part in my choosing Nuxt. I'm also deploying
         to <a href="https://aws.amazon.com/s3/" target="_blank" rel="noopener">AWS S3</a> and using
         <a href="https://aws.amazon.com/cloudfront/" target="_blank" rel="noopener">AWS Cloudfront</a> as a CDN for better performance and HTTPS communication.
+        This site is open source so feel free to check it out on <a href="https://www.github.com/leesmith/leesmith-dot-net" target="_blank" rel="noreferrer"><fa-icon :icon="['fab', 'github']" /> Github</a>.
       </p>
       <h3 class="has-text-brown">Nuxt</h3>
       <p>
@@ -135,7 +136,7 @@ export default {
         isn't the most efficient way to get things done. Onced awscli is installed and configured for your AWS account, you should be able to copy your files to
         your bucket:
       </p>
-      <pre v-highlightjs><code class="bash">aws s3 cp dist s3://example.tld --recursive</code></pre>
+      <pre v-highlightjs><code class="bash">aws s3 cp dist s3://mybucket --recursive</code></pre>
       <p>
         Now that the S3 bucket is serving your site, the next thing you would do is serve your website through an AWS Cloudfront distribution. This allows you to improve performance
         by making your website's static files (such as HTML, images, and video) available from data centers around the world (which they
@@ -158,7 +159,7 @@ export default {
       </p>
       <h3 class="has-text-brown">Deployment</h3>
       <p>
-        For the sake of automation, I've put together a simple script for deployment. This script depends on your AWS settings. It creates a .env file if one does not exist
+        I've put together a simple script to automate deployment. This script depends on your AWS settings. It creates a .env file if one does not exist
         and after you fill in the two variables (S3 URI and Cloudfront distribution ID), deployment is as simple as running the script. I'm using the S3 <code>sync</code> command to push
         my files to the bucket. The <code>sync</code> command is using a cache-control option to set a far future max-age value for the files as well as a delete option that will delete
         anything in the bucket that's not contained in my dist directory. In addition to sync'ing the files to the bucket, we also need to invalidate our cloudfront distribution
@@ -182,8 +183,7 @@ else
 fi</code></pre>
       <p>
         You could automate your deploys even further by using a CI/CD service like <a href="https://semaphoreci.com/docs/deploying-to-amazon-s3.html" target="_blank" rel="noreferrer">Semaphore</a>
-        so that each push to your master branch kicks off a deploy. This is very similar to what Netlify offers. I could see that being a nice feature when
-        working on a larger project.
+        so that each push to your master branch kicks off a deploy. This is very similar to what Netlify offers. I could see that being a nice feature when working on a larger project.
       </p>
       <p>
         So far, I've really enjoyed playing around with Nuxt. Hit me up on <a href="https://www.twitter.com/jeremyleesmith" target="_blank" rel="noreferrer"><fa-icon :icon="['fab', 'twitter']" /> Twitter</a>
