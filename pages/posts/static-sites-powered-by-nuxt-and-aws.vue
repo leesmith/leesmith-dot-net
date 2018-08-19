@@ -175,7 +175,7 @@ else
     echo "Deploy complete! 🎉"
 fi</code></pre>
       <p>
-        You could automate your deploys even further by using a CI/CD service like <a href="https://semaphoreci.com/docs/deploying-to-amazon-s3.html" target="_blank" ref="noreferrer">Semaphore</a>
+        You could automate your deploys even further by using a CI/CD service like <a href="https://semaphoreci.com/docs/deploying-to-amazon-s3.html" target="_blank" rel="noreferrer">Semaphore</a>
         so that each push to your master branch kicks off a deploy. This is very similar to what Netlify offers. I could see that being a nice feature when
         working on a larger project.
       </p>
