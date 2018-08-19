@@ -186,9 +186,6 @@ fi</code></pre>
         working on a larger project.
       </p>
       <p>
-        I ran 
-      </p>
-      <p>
         So far, I've really enjoyed playing around with Nuxt. Hit me up on <a href="https://www.twitter.com/jeremyleesmith" target="_blank" rel="noreferrer"><fa-icon :icon="['fab', 'twitter']" /> Twitter</a>
         with any questions/comments.
       </p>
