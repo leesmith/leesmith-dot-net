@@ -44,13 +44,16 @@ module.exports = {
         component: "fa-icon",
         imports: [
           {
-            set: "@fortawesome/fontawesome-free-regular"
+            set: "@fortawesome/free-regular-svg-icons",
+            icons: ['far']
           },
           {
-            set: "@fortawesome/fontawesome-free-solid"
+            set: "@fortawesome/free-solid-svg-icons",
+            icons: ['fas']
           },
           {
-            set: "@fortawesome/fontawesome-free-brands"
+            set: "@fortawesome/free-brands-svg-icons",
+            icons: ['fab']
           }
         ]
       }
