@@ -3,30 +3,30 @@
   font-family: "Inter UI";
   font-style: normal;
   font-weight: 400;
-  src: url("~/assets/font/Inter-UI-Regular.woff2") format("woff2"),
-    url("~/assets/font/Inter-UI-Regular.woff") format("woff");
+  src: url("~assets/font/Inter-UI-Regular.woff2") format("woff2"),
+    url("~assets/font/Inter-UI-Regular.woff") format("woff");
 }
 @font-face {
   font-display: auto;
   font-family: "Inter UI";
   font-style: italic;
   font-weight: 400;
-  src: url("~/assets/font/Inter-UI-Italic.woff2") format("woff2"),
-    url("~/assets/font/Inter-UI-Italic.woff") format("woff");
+  src: url("~assets/font/Inter-UI-Italic.woff2") format("woff2"),
+    url("~assets/font/Inter-UI-Italic.woff") format("woff");
 }
 @font-face {
   font-display: auto;
   font-family: "Inter UI";
   font-style: normal;
   font-weight: 500;
-  src: url("~/assets/font/Inter-UI-Medium.woff2") format("woff2"),
-    url("~/assets/font/Inter-UI-Medium.woff") format("woff");
+  src: url("~assets/font/Inter-UI-Medium.woff2") format("woff2"),
+    url("~assets/font/Inter-UI-Medium.woff") format("woff");
 }
 @font-face {
   font-display: auto;
   font-family: "Inter UI";
   font-style: normal;
   font-weight: 700;
-  src: url("~/assets/font/Inter-UI-Bold.woff2") format("woff2"),
-    url("~/assets/font/Inter-UI-Bold.woff") format("woff");
+  src: url("~assets/font/Inter-UI-Bold.woff2") format("woff2"),
+    url("~assets/font/Inter-UI-Bold.woff") format("woff");
 }
