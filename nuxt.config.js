@@ -22,7 +22,7 @@ module.exports = {
     "@/assets/css/inter-ui.css",
     "bulma",
     "@/assets/css/application.scss",
-    "@/node_modules/highlight.js/styles/atom-one-light.css"
+    "@/node_modules/highlight.js/styles/atom-one-dark.css"
   ],
   /*
   ** Customize the progress bar color
