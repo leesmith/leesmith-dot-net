@@ -67,7 +67,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ["vue-highlightjs"],
     /*
     ** Run ESLint on save
     */
