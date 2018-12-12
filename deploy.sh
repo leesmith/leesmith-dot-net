@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+#
+# Sync generated site to S3 and invalidate Cloudfront distribution
+
 if [ ! -f .env ]; then
     echo "# Project environment variables...do not commit this file." >> .env
     echo "AWS_CF_DIST_ID=" >> .env
