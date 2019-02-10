@@ -1,5 +1,5 @@
 @font-face {
-  font-display: auto;
+  font-display: swap;
   font-family: "Inter UI";
   font-style: normal;
   font-weight: 400;
@@ -7,7 +7,7 @@
     url("~assets/font/Inter-UI-Regular.woff") format("woff");
 }
 @font-face {
-  font-display: auto;
+  font-display: swap;
   font-family: "Inter UI";
   font-style: italic;
   font-weight: 400;
@@ -15,7 +15,7 @@
     url("~assets/font/Inter-UI-Italic.woff") format("woff");
 }
 @font-face {
-  font-display: auto;
+  font-display: swap;
   font-family: "Inter UI";
   font-style: normal;
   font-weight: 500;
@@ -23,7 +23,7 @@
     url("~assets/font/Inter-UI-Medium.woff") format("woff");
 }
 @font-face {
-  font-display: auto;
+  font-display: swap;
   font-family: "Inter UI";
   font-style: normal;
   font-weight: 700;
