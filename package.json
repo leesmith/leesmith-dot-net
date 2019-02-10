@@ -16,7 +16,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.7.1",
     "@fortawesome/free-regular-svg-icons": "^5.7.1",
     "@fortawesome/free-solid-svg-icons": "^5.7.1",
-    "@nuxtjs/google-analytics": "^2.0.2",
+    "@nuxtjs/google-analytics": "^2.0.3",
     "bulma": "^0.7.4",
     "nuxt": "^2.4.3",
     "nuxt-fontawesome": "^0.4.0",
