@@ -11,8 +11,9 @@
         I'm currently experimenting with NuxtJS, which I used to build this site.
       </p>
       <p>
-        Feel free to hit me up on <a href="https://www.twitter.com/jeremyleesmith" target="_blank" rel="noopener"><fa-icon :icon="['fab', 'twitter']" /> Twitter</a>
-        or follow me on <a href="https://www.github.com/leesmith" target="_blank" rel="noopener"><fa-icon :icon="['fab', 'github']" /> Github</a>.
+        Feel free to hit me up on <a href="https://www.twitter.com/jeremyleesmith" target="_blank" rel="noopener"><fa-icon :icon="['fab', 'twitter']" /> Twitter</a>,
+        follow me on <a href="https://www.github.com/leesmith" target="_blank" rel="noopener"><fa-icon :icon="['fab', 'github']" /> Github</a>,
+        or shoot me <nuxt-link to="/contact"><fa-icon :icon="['fas', 'envelope']" /> message</nuxt-link>.
       </p>
       <p>Cheers! <span class="is-size-3">🍻</span></p>
     </div>
