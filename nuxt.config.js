@@ -19,7 +19,7 @@ module.exports = {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   css: [
-    "@/assets/css/inter-ui.css",
+    "@/assets/css/inter.css",
     "bulma",
     "@/assets/css/application.scss",
     "@/node_modules/highlight.js/styles/atom-one-dark.css"

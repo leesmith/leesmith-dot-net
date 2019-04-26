@@ -2,7 +2,7 @@
 @import "~bulma/sass/utilities/functions";
 
 // customize styles
-$family-sans-serif: "Inter UI", BlinkMacSystemFont, -apple-system, "Segoe UI",
+$family-sans-serif: "Inter var", BlinkMacSystemFont, -apple-system, "Segoe UI",
   "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
   "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
@@ -24,6 +24,11 @@ $colors: map-merge($colors, $addColors);
 
 html {
   background-color: #f4f3ef;
+  letter-spacing: -0.025em;
+}
+
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
 }
 
 .page-enter-active,
