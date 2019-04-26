@@ -18,7 +18,7 @@
             <nuxt/>
           </div>
           <aside class="column">
-            <nuxt-link to="/"><div class="headshot"></div></nuxt-link>
+            <nuxt-link to="/" aria-label="Headshot"><div class="headshot"></div></nuxt-link>
             <ul class="aside-list">
               <li><nuxt-link to="/"><fa-icon :icon="['fas', 'home']" /> Home</nuxt-link></li>
               <li><nuxt-link to="/about"><fa-icon :icon="['fas', 'user-circle']" /> About</nuxt-link></li>
