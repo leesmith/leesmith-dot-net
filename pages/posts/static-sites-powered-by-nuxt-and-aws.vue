@@ -1,8 +1,8 @@
 <template>
   <div>
-    <fa-icon :icon="['far', 'calendar-alt']" /> August 18, 2018
-    <h1 class="title has-text-brown">Static Sites Powered By Nuxt and AWS</h1>
-    <div class="content">
+    <span class="text-gray-600 text-sm font-light"><fa-icon :icon="['far', 'calendar-alt']" /> August 18, 2018</span>
+    <h1 class="text-3xl text-blue-600 font-medium">Static Sites Powered By Nuxt and AWS</h1>
+    <div>
       <p>
         <img src="~/assets/img/nuxt-aws.png" alt="Nuxt + AWS" />
       </p>
@@ -12,7 +12,7 @@
       <p>
         So I ended up choosing <a href="https://nuxtjs.org/" target="_blank" rel="noopener">Nuxt</a> as my static site generator. Nuxt is a high level framework that sits on top of <a href="https://vuejs.org/" target="_blank" rel="noreferrer">Vue</a> and offers many cool features and also some conventions that I appreciate. I've been keeping my eye on Vue for a while and I like what I see so that also played a part in my choosing Nuxt. I'm also deploying to <a href="https://aws.amazon.com/s3/" target="_blank" rel="noopener">AWS S3</a> and using <a href="https://aws.amazon.com/cloudfront/" target="_blank" rel="noopener">AWS Cloudfront</a> as a CDN for better performance and HTTPS communication. This site is open source so feel free to check it out on <a href="https://www.github.com/leesmith/leesmith-dot-net" target="_blank" rel="noreferrer"><fa-icon :icon="['fab', 'github']" /> Github</a>.
       </p>
-      <h3 class="has-text-brown">Nuxt</h3>
+      <h3 class="text-xl text-blue-600 font-medium">Nuxt</h3>
       <p>
         Nuxt, primarily inspired by Next.js, is a high level framework for developing universal JavaScript applications in Vue. By default, Nuxt supports server-side rendering but can also be configured as a SPA. The big innovation of Nuxt is "pre rendering" which allows you to generate your web app so that it can be hosted on any of the popular static hosting providers like Amazon S3 or Netlify.
       </p>

@@ -29,4 +29,9 @@ $ npm run generate
 $ ./deploy.sh
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+## Development
+
+``` bash
+# Build application css from tailwind
+$ npx tailwind build assets/css/tailwind.css -o assets/css/application.css
+```

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <fa-icon :icon="['far', 'calendar-alt']" /> June 3, 2018
-    <h1 class="title has-text-brown">New site who dis</h1>
-    <div class="content">
+    <span class="text-gray-600 text-sm font-light"><fa-icon :icon="['far', 'calendar-alt']" /> June 3, 2018</span>
+    <h1 class="text-3xl text-blue-600 font-medium">New site who dis</h1>
+    <div>
       <p>
         So I'm finally publishing a personal blog! I know...I should have been doing this a long time ago. I don't know what made me check on the availability but
         this domain wasn't registered so I pulled the trigger. Finally - a domain name I don't hate! But that's a terrible reason to not blog but oh well.
