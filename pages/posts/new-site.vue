@@ -1,7 +1,7 @@
 <template>
   <div>
-    <fa-icon :icon="['far', 'calendar-alt']" /> June 3, 2018
-    <h1 class="title has-text-brown">New site who dis</h1>
+    <div class="text-sm"><fa-icon :icon="['far', 'calendar-alt']" /> June 3, 2018</div>
+    <h2 class="page-title">New site who dis</h2>
     <div class="content">
       <p>
         So I'm finally publishing a personal blog! I know...I should have been doing this a long time ago. I don't know what made me check on the availability but

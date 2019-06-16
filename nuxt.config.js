@@ -19,10 +19,9 @@ module.exports = {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   css: [
-    "@/assets/css/inter.css",
-    "bulma",
-    "@/assets/css/application.scss",
-    "@/node_modules/highlight.js/styles/atom-one-dark.css"
+    "~/assets/css/tailwind.css",
+    "~/assets/css/inter.css",
+    "~/node_modules/highlight.js/styles/atom-one-dark.css"
   ],
   /*
   ** Customize the progress bar color
@@ -59,6 +58,9 @@ module.exports = {
       }
     ]
   ],
+  purgeCSS: {
+    whitelistPatterns: [/-enter/, /-leave/]
+  },
   /*
   ** Plugins
   */
@@ -67,10 +69,15 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    /*
-    ** Run ESLint on save
-    */
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      }
+    },
+    extractCSS: true,
     extend(config, { isDev, isClient }) {
+      // Run ESLint on save
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: "pre",

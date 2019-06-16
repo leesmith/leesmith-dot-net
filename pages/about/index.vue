@@ -1,21 +1,21 @@
 <template>
   <div>
-    <h1 class="title has-text-brown">About</h1>
+    <h2 class="page-title">Hello</h2>
     <div class="content">
       <p>Welcome to my personal website. My name is Lee Smith and I'm a software engineer living in Birmingham, AL.</p>
       <p>
         This is my personal site where I'll blog about anything interesting I've learned along the way in my career
-        in technology. I'm currently the Director of Engineering for <a href="https://www.threatadvice.com/" target="_blank" rel="noopener">ThreatAdvice</a>,
+        in technology. I'm currently the Director of Engineering for <a href="https://www.nxtsoft.com/" class="text-blue-600 hover:text-blue-800" target="_blank" rel="noopener">Nxtsoft</a>,
         a cybersecurity education and technology startup. I enjoy learning and working with open source software. My primary technology
         stack these days is writing Ruby within the Ruby on Rails web application framework and deploying to Heroku and Amazon Web Services.
         I'm currently experimenting with NuxtJS, which I used to build this site.
       </p>
       <p>
-        Feel free to hit me up on <a href="https://www.twitter.com/jeremyleesmith" target="_blank" rel="noopener"><fa-icon :icon="['fab', 'twitter']" /> Twitter</a>,
-        follow me on <a href="https://www.github.com/leesmith" target="_blank" rel="noopener"><fa-icon :icon="['fab', 'github']" /> Github</a>,
-        or shoot me <nuxt-link to="/contact"><fa-icon :icon="['fas', 'envelope']" /> message</nuxt-link>.
+        Feel free to hit me up on <a href="https://www.twitter.com/jeremyleesmith" class="text-blue-600 hover:text-blue-800" target="_blank" rel="noopener"><fa-icon :icon="['fab', 'twitter']" /> Twitter</a>,
+        follow me on <a href="https://www.github.com/leesmith" class="text-blue-600 hover:text-blue-800" target="_blank" rel="noopener"><fa-icon :icon="['fab', 'github']" /> Github</a>,
+        or shoot me <nuxt-link to="/contact" class="text-blue-600 hover:text-blue-800"><fa-icon :icon="['fas', 'envelope']" /> message</nuxt-link>.
       </p>
-      <p>Cheers! <span class="is-size-3">🍻</span></p>
+      <p>Cheers! <span class="text-3xl">🍻</span></p>
     </div>
   </div>
 </template>

@@ -1,37 +1,32 @@
 <template>
   <div>
-    <h1 class="title has-text-brown">Contact Me</h1>
+    <h2 class="page-title">Contact</h2>
     <form @submit.prevent="sendEmail" id="contact-me" method="post" action="https://m0dzz6yl11.execute-api.us-east-1.amazonaws.com/dev/static-site-mailer">
-      <div class="field">
-        <label class="label has-text-brown" for="name">Name</label>
-        <div class="control">
-          <input class="input is-medium" type="text" name="name" id="name" required="true" autofocus="autofocus">
-        </div>
+
+      <label class="block">
+        <span>Name</span>
+        <input type="text" class="form-input mt-1 block w-full" id="name" name="name" required="true" autofocus="autofocus">
+      </label>
+
+      <label class="block mt-6">
+        <span>Email</span>
+        <input type="email" class="form-input mt-1 block w-full" name="email" id="email" required="true">
+      </label>
+
+      <label class="block mt-6">
+        <span>Message</span>
+        <textarea class="form-textarea mt-1 block w-full" rows="3" name="message" id="message" required="true"></textarea>
+      </label>
+
+      <div class="mt-6">
+        <button type="submit" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded">
+          <span class="icon"><fa-icon :icon="['far', 'envelope']" /></span>
+          <span>Send</span>
+        </button>
       </div>
-      <div class="field">
-        <label class="label has-text-brown" for="email">Email</label>
-        <div class="control">
-          <input class="input is-medium" type="email" name="email" id="email" required="true">
-        </div>
-      </div>
-      <div class="field">
-        <label class="label has-text-brown" for="message">Message</label>
-        <div class="control">
-          <textarea class="textarea is-medium" name="message" id="message" required="true"></textarea>
-        </div>
-      </div>
-      <div class="field">
-        <div class="control">
-          <button type="submit" class="button is-link is-medium">
-            <span class="icon">
-              <fa-icon :icon="['far', 'envelope']" />
-            </span>
-            <span>Send</span>
-          </button>
-        </div>
-      </div>
+
     </form>
-    <p id="js-form-response" class="is-size-5 has-text-link has-text-weight-semibold" style="margin-top: 1.25rem;"></p>
+    <p id="js-form-response" class="hidden text-center rounded bg-green-200 text-green-800 font-semibold mt-8 p-4"></p>
   </div>
 </template>
 
@@ -40,7 +35,7 @@ export default {
   head() {
     return {
       title: "Contact - LeeSmith.net",
-      meta: [{ hid: "description", name: "description", content: "Contact Me" }]
+      meta: [{ hid: "description", name: "description", content: "Contact" }]
     };
   },
   methods: {
@@ -69,6 +64,7 @@ export default {
           // The form submission was successful
           form.reset();
           formResponse.innerHTML = 'Thanks! I’ll be in touch shortly.';
+          formResponse.classList.remove("hidden");
         } else {
           // The form submission failed
           formResponse.innerHTML = 'Something went wrong! Please try again, or <a href="mailto:jeremyleesmith@gmail.com">email me directly</a>.';
