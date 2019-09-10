@@ -1,19 +1,19 @@
 <template>
   <div>
-    <fa-icon :icon="['far', 'calendar-alt']" /> December 5, 2018
-    <h1 class="title has-text-brown">Migrating to minpac for Vim</h1>
+    <div class="text-sm font-medium"><fa-icon :icon="['far', 'calendar-alt']" /> December 5, 2018</div>
+    <h2 class="page-title">Migrating to minpac for Vim</h2>
     <div class="content">
       <p>
         I've just done an overhaul to my <a href="https://github.com/leesmith/dotfiles" target="_blank" rel="noopener">dotfiles</a> and I wanted to document how and why I migrated from <a href="https://github.com/tpope/vim-pathogen" target="_blank" rel="noopener">pathogen</a> to <a href="https://github.com/k-takata/minpac" target="_blank" rel="noopener">minpac</a>.
       </p>
-      <h3 class="has-text-brown">Why minpac</h3>
+      <h3 class="section-header">Why minpac</h3>
       <p>
         Minpac is described as a "minimal package manager for Vim 8". Ok, great. How is minpac different or better than the package managers that have been around for years (Vundle, vim-plug, pathogen, etc.)?
       </p>
       <p>
         Now that Vim 8 ships with native package management, minpac builds on top of this functionality, allowing for a more lightweight plugin.  Unlike its predesessors, minpac doesn't invent it's own solution for managing the runtimepath. Another Vim 8 feature that minpac leverages is the job control feature. This allows minpac to install and update plugins in parallel.
       </p>
-      <h3 class="has-text-brown">Configuring minpac</h3>
+      <h3 class="section-header">Configuring minpac</h3>
       <p>
         So for me, coming from pathogen, I can delete the <em>~/.vim/bundle</em> directory and create the directory where minpac will live.
       </p>
@@ -70,7 +70,7 @@ endif
       <p>
         Of course, minpac also works with <a href="https://neovim.io/" target="_blank" rel="noopener">Neovim</a> if you prefer that over Vim 8. Check out the docs for a slightly different install process.
       </p>
-      <p>Happy Vim'ing! <span class="is-size-3">🍻</span></p>
+      <p>Happy Vim'ing! <span class="text-3xl">🍻</span></p>
     </div>
   </div>
 </template>
