@@ -47,7 +47,7 @@
 @tailwind utilities;
 
 body {
-  @apply .font-sans .tracking-tight .bg-gray-200 .text-gray-700 .antialiased;
+  @apply .font-sans .tracking-tight .bg-gray-200 .text-gray-800 .antialiased;
 }
 
 header {
@@ -67,17 +67,16 @@ header {
   @apply .mb-6;
 }
 
-pre {
+.code-wrap {
   @apply .rounded-lg .overflow-hidden .mb-4;
 }
 
-pre > code.hljs {
-  padding: 1em;
+code {
+  @apply .bg-gray-200 .rounded-sm .font-mono .font-medium .text-sm .py-1 .px-2;
 }
 
-code {
-  @apply .font-mono .font-medium .text-sm .py-1 .px-2;
-  background-color: #f5f5f5;
+pre > code.hljs {
+  @apply .p-4;
 }
 
 .section-header {

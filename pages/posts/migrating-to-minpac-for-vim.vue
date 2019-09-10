@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="text-sm font-medium"><fa-icon :icon="['far', 'calendar-alt']" /> December 5, 2018</div>
+    <div class="text-sm"><fa-icon :icon="['far', 'calendar-alt']" /> December 5, 2018</div>
     <h2 class="page-title">Migrating to minpac for Vim</h2>
     <div class="content">
       <p>
