@@ -8,17 +8,17 @@
         <input type="text" class="form-input mt-1 block w-full" id="name" name="name" required="true" autofocus="autofocus">
       </label>
 
-      <label class="block mt-6">
+      <label class="block mt-8">
         <span>Email</span>
         <input type="email" class="form-input mt-1 block w-full" name="email" id="email" required="true">
       </label>
 
-      <label class="block mt-6">
+      <label class="block mt-8">
         <span>Message</span>
         <textarea class="form-textarea mt-1 block w-full" rows="3" name="message" id="message" required="true"></textarea>
       </label>
 
-      <div class="mt-6">
+      <div class="mt-8">
         <button type="submit" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded">
           <span class="icon"><fa-icon :icon="['far', 'envelope']" /></span>
           <span>Send</span>
