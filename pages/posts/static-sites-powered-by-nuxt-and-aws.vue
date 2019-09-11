@@ -115,7 +115,7 @@ export default {
         Follow the AWS S3 <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/HostingWebsiteOnS3Setup.html" target="_blank" rel="noopener">walkthrough</a> for creating and configuring your S3 bucket.
       </p>
       <p>
-        At this point, you could push up your generated site files to make sure your bucket is configured properly. I highly recommend using the <a href="https://aws.amazon.com/cli/" target="_blank" rel="noreferrer">awscli</a> when working with AWS. Pointing and clicking through the web console isn't the most efficient way to get things done. Onced awscli is installed and configured for your AWS account, you should be able to copy your files to your bucket:
+        At this point, you could push up your generated site files to make sure your bucket is configured properly. I highly recommend using the <a href="https://aws.amazon.com/cli/" target="_blank" rel="noreferrer">awscli</a> when working with AWS. Pointing and clicking through the web console isn't the most efficient way to get things done. Once awscli is installed and configured for your AWS account, you should be able to copy your files to your bucket:
       </p>
       <div class="code-wrap"><pre v-highlightjs><code class="bash">aws s3 cp dist s3://mybucket --recursive</code></pre></div>
       <p>
