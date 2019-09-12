@@ -15,13 +15,13 @@
       </p>
       <h3 class="section-header">Configuring minpac</h3>
       <p>
-        So for me, coming from pathogen, I can delete the <em>~/.vim/bundle</em> directory and create the directory where minpac will live.
+        So for me, coming from pathogen, I can delete the <code>~/.vim/bundle</code> directory and create the directory where minpac will live.
       </p>
       <div class="code-wrap"><pre v-highlightjs><code class="bash">rm -rf ~/.vim/bundle
 mkdir -p ~/.vim/pack/minpac/opt
 git clone https://github.com/k-takata/minpac.git ~/.vim/pack/minpac/opt/minpac</code></pre></div>
       <p>
-        From here, it's a matter of configuring your <em>.vimrc</em> for minpac. The following is a basic example of what you might include in your <em>.vimrc</em>. Minpac's install instructions offer something more simple than this but I like this example because it offers the ability to have a more flexible <em>.vimrc</em> for the case where you want to use the same <em>.vimrc</em> in different environments (like on a server that doesn't have your plugins installed).
+        From here, it's a matter of configuring your <code>.vimrc</code> for minpac. The following is a basic example of what you might include in your <code>.vimrc</code>. Minpac's install instructions offer something more simple than this but I like this example because it offers the ability to have a more flexible <code>.vimrc</code> for the case where you want to use the same <code>.vimrc</code> in different environments (like on a server that doesn't have your plugins installed).
       </p>
       <div class="code-wrap"><pre v-highlightjs><code class="vim">" ~/.vimrc
 " Try to load minpac.
@@ -62,7 +62,7 @@ endif
 " Common settings here.
 "...</code></pre></div>
       <p>
-        Here's minpac in action. After I open vim, I update all plugins specified in my <em>.vimrc</em> using the utility command <em>:PackUpdate</em>. After the update is finished, <em>:PackStatus</em> shows a summary of what changed.
+        Here's minpac in action. After I open vim, I update all plugins specified in my <code>.vimrc</code> using the utility command <code>:PackUpdate</code>. After the update is finished, <code>:PackStatus</code> shows a summary of what changed.
       </p>
       <p>
         <img src="~/assets/img/minpac.gif" alt="minpac" />
