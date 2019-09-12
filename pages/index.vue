@@ -2,6 +2,12 @@
   <div>
     <ul class="post-list">
       <li>
+        <div class="text-sm"><fa-icon :icon="['far', 'calendar-alt']" /> September 12, 2019</div>
+        <nuxt-link to="/posts/github-actions" class="fancy-underline text-lg md:text-xl lg:text-2xl font-semibold">
+          Kicking the Tires on Github Actions
+        </nuxt-link>
+      </li>
+      <li class="mt-8">
         <div class="text-sm"><fa-icon :icon="['far', 'calendar-alt']" /> December 5, 2018</div>
         <nuxt-link to="/posts/migrating-to-minpac-for-vim" class="fancy-underline text-lg md:text-xl lg:text-2xl font-semibold">
           Migrating to minpac for Vim
