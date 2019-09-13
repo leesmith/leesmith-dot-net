@@ -8,10 +8,10 @@
       </p>
       <p>
         I've been using GitHub for over 10 years now and I really think <a href="https://github.com/features/actions" target="_blank" rel="noopener">Github Actions</a>
-        is one the biggest features to date. Github Actions is essentially an automation API that "enables
-        you to create custom software development lifecycle workflows directly in your Github repo".
-        Based on some event you specify (such as a push or issue creation or a new release), you're
-        able to orchestrate workflows and have Github execute them for you. Workflows are described
+        is one of the biggest features to date. Github Actions is essentially an automation API that
+        "enables you to create custom software development lifecycle workflows directly in your Github
+        repo". Based on some event you specify (such as a push or issue creation or a new release),
+        you're able to orchestrate workflows and have Github execute them for you. Workflows are described
         by a workflow file that lives in the root of your repository.
       </p>
       <p>
