@@ -12,7 +12,8 @@ else
     echo "CF DIST -> $AWS_CF_DIST_ID"
     echo "S3 URI -> $AWS_S3_URI"
     echo "Performing sync..."
-    aws s3 sync dist s3://$AWS_S3_URI --cache-control "max-age=31536000" --delete
+    aws s3 sync dist s3://$AWS_S3_URI --cache-control "max-age=31536000, immutable" --delete
+    aws s3 cp dist/index.html s3://$AWS_S3_URI/index.html --cache-control "no-cache"
     echo "Invalidating cloudfront distribution..."
     aws cloudfront create-invalidation --distribution-id $AWS_CF_DIST_ID --paths "/*"
     echo "Deploy complete! 🎉"
