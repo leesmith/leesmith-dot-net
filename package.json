@@ -13,9 +13,9 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^5.11.1",
-    "@fortawesome/free-regular-svg-icons": "^5.11.1",
-    "@fortawesome/free-solid-svg-icons": "^5.11.1",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@nuxtjs/google-analytics": "^2.2.0",
     "nuxt": "^2.9.2",
     "nuxt-fontawesome": "^0.4.0",
