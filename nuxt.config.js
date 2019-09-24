@@ -56,10 +56,11 @@ module.exports = {
           }
         ]
       }
-    ]
+    ],
+    "nuxt-purgecss"
   ],
   purgeCSS: {
-    whitelistPatterns: [/-enter/, /-leave/]
+    whitelistPatterns: [/-enter/, /-leave/, /svg-inline/, /hljs/]
   },
   /*
   ** Plugins
