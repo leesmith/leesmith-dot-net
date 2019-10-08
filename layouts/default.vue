@@ -10,7 +10,7 @@
       </div>
     </header>
     <div class="container mx-auto px-4 mb-16">
-      <main class="bg-white rounded-lg -mt-8 shadow-lg p-4 md:p-6">
+      <main class="bg-white rounded-lg -mt-8 smooth-shadow-2xl p-4 md:p-6">
         <div class="md:flex">
           <div class="md:w-3/4">
             <nuxt/>

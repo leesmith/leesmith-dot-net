@@ -161,6 +161,26 @@ a.fancy-underline:hover:before {
     );
 }
 
+.smooth-shadow {
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.08), 0 2px 2px 0 rgba(0,0,0,.05);
+}
+
+.smooth-shadow-md {
+  box-shadow: 0 1px 1px rgba(0,0,0,.1), 0 2px 2px rgba(0,0,0,.08), 0 3px 3px rgba(0,0,0,0.06);
+}
+
+.smooth-shadow-lg {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 2px 2px rgba(0,0,0,0.09), 0 4px 4px rgba(0,0,0,0.08), 0 8px 8px rgba(0,0,0,0.07);
+}
+
+.smooth-shadow-xl {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 2px 2px rgba(0,0,0,0.09), 0 4px 4px rgba(0,0,0,0.08), 0 8px 8px rgba(0,0,0,0.07), 0 16px 16px rgba(0,0,0,0.06);
+}
+
+.smooth-shadow-2xl {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 2px 2px rgba(0,0,0,0.09), 0 4px 4px rgba(0,0,0,0.08), 0 8px 8px rgba(0,0,0,0.07), 0 16px 16px rgba(0,0,0,0.06), 0 32px 32px rgba(0,0,0,0.05);
+}
+
 /**
  * Here you would add any custom utilities you need that don't come out of the
  * box with Tailwind.
