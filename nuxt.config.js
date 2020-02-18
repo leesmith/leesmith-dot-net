@@ -28,7 +28,6 @@ export default {
   */
   css: [
     '~/assets/css/tailwind.css',
-    '~/assets/css/inter.css',
     '~/node_modules/highlight.js/styles/atom-one-dark.css'
   ],
   /*
