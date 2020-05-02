@@ -28,7 +28,8 @@ export default {
   */
   css: [
     '~/assets/css/tailwind.css',
-    '~/node_modules/highlight.js/styles/atom-one-dark.css'
+    '~/node_modules/highlight.js/styles/atom-one-dark.css',
+    'typeface-inter'
   ],
   /*
   ** Plugins to load before mounting the App
