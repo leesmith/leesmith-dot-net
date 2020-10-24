@@ -27,7 +27,7 @@
                 <li>
                   <a class="text-2xl mr-4" href="https://www.twitter.com/jeremyleesmith" target="_blank" rel="noopener" aria-label="Twitter" style="color: #1da1f2;"><fa-icon :icon="['fab', 'twitter']" title="Twitter" role="img" /></a>
                   <a class="text-2xl mr-4" href="https://www.github.com/leesmith" target="_blank" rel="noopener" aria-label="GitHub" style="color: #24292e;"><fa-icon :icon="['fab', 'github']" title="GitHub" role="img" /></a>
-                  <a class="text-2xl" href="https://www.dev.to/smitjel" target="_blank" rel="noopener" aria-label="Dev" style="color: #ff922b;"><fa-icon :icon="['fab', 'dev']" title="Dev" role="img" /></a>
+                  <a class="text-2xl" href="https://www.dev.to/leesmith" target="_blank" rel="noopener" aria-label="Dev" style="color: #ff922b;"><fa-icon :icon="['fab', 'dev']" title="Dev" role="img" /></a>
                 </li>
               </ul>
             </div>
