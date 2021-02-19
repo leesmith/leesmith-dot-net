@@ -17,7 +17,8 @@ export default {
         content: 'Personal site for Lee Smith'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }]
   },
   /*
   ** Customize the progress bar color
@@ -29,7 +30,6 @@ export default {
   css: [
     '~/assets/css/tailwind.css',
     '~/node_modules/highlight.js/styles/atom-one-dark.css',
-    'typeface-inter'
   ],
   /*
   ** Plugins to load before mounting the App

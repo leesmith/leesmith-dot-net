@@ -46,8 +46,12 @@
  */
 @tailwind utilities;
 
+html {
+  @apply .tracking-tight;
+}
+
 body {
-  @apply .font-sans .bg-gray-200 .text-gray-800 .antialiased;
+  @apply .font-sans .font-medium .bg-gray-200 .text-gray-700 .antialiased;
 }
 
 header {
