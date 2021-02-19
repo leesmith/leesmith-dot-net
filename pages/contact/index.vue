@@ -3,26 +3,28 @@
     <h2 class="page-title">Contact</h2>
     <form @submit.prevent="sendEmail" id="contact-me" method="post" action="https://m0dzz6yl11.execute-api.us-east-1.amazonaws.com/dev/static-site-mailer">
 
-      <label class="block">
-        <span>Name</span>
-        <input type="text" class="form-input mt-1 block w-full" id="name" name="name" required="true" autofocus="autofocus">
-      </label>
+      <div class="grid grid-cols-1 gap-6">
+        <label class="block">
+          <span class="text-gray-700">Name</span>
+          <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50" id="name" name="name" required="true" autofocus="autofocus">
+        </label>
 
-      <label class="block mt-8">
-        <span>Email</span>
-        <input type="email" class="form-input mt-1 block w-full" name="email" id="email" required="true">
-      </label>
+        <label class="block">
+          <span class="text-gray-700">Email</span>
+          <input type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50" name="email" id="email" required="true">
+        </label>
 
-      <label class="block mt-8">
-        <span>Message</span>
-        <textarea class="form-textarea mt-1 block w-full" rows="3" name="message" id="message" required="true"></textarea>
-      </label>
+        <label class="block">
+          <span class="text-gray-700">Message</span>
+          <textarea class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50" rows="3" name="message" id="message" required="true"></textarea>
+        </label>
 
-      <div class="mt-8">
-        <button type="submit" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded">
-          <span class="icon"><fa-icon :icon="['far', 'envelope']" /></span>
-          <span>Send</span>
-        </button>
+        <div class="block">
+          <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <span class="icon"><fa-icon :icon="['far', 'envelope']" /></span>
+            <span>Send</span>
+          </button>
+        </div>
       </div>
 
     </form>

@@ -1,57 +1,12 @@
-/**
- * This injects Tailwind's base styles, which is a combination of
- * Normalize.css and some additional base styles.
- *
- * You can see the styles here:
- * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/base";
- */
 @tailwind base;
-
-/**
- * This injects any component classes registered by plugins.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/components";
- */
 @tailwind components;
 
-/**
- * Here you would add any of your custom component classes; stuff that you'd
- * want loaded *before* the utilities so that the utilities could still
- * override them.
- *
- * Example:
- *
- * .btn { ... }
- * .form-input { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "components/buttons";
- * @import "components/forms";
- */
-
-/**
- * This injects all of Tailwind's utility classes, generated based on your
- * config file.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/utilities";
- */
-@tailwind utilities;
-
 html {
-  @apply .tracking-tight;
+  @apply tracking-tight;
 }
 
 body {
-  @apply .font-sans .font-medium .bg-gray-200 .text-gray-700 .antialiased;
+  @apply font-sans font-medium bg-gray-200 text-gray-700 antialiased;
 }
 
 header {
@@ -60,32 +15,32 @@ header {
 }
 
 .site-title {
-  @apply .text-white .text-3xl .font-bold .tracking-normal .outline-none;
+  @apply text-white text-3xl font-bold tracking-normal outline-none;
   text-shadow: rgba(0, 0, 0, 0.45) 0 1px 2px;
 }
 
 .page-title {
-  @apply .text-blue-600 .font-semibold .text-3xl .mb-4;
+  @apply text-blue-500 font-semibold text-3xl mb-4;
 }
 
 .content p {
-  @apply .mb-8;
+  @apply mb-8;
 }
 
 .code-wrap {
-  @apply .rounded-lg .overflow-hidden .mb-8;
+  @apply rounded-lg overflow-hidden mb-8 tracking-normal;
 }
 
 code {
-  @apply .bg-gray-200 .rounded-sm .font-mono .font-medium .text-sm .py-1 .px-2;
+  @apply bg-gray-200 rounded-sm font-mono font-medium text-sm py-1 px-2;
 }
 
 pre > code.hljs {
-  @apply .p-4;
+  @apply p-4;
 }
 
 .section-header {
-  @apply .text-blue-600 .text-xl .font-semibold;
+  @apply text-blue-500 text-xl font-semibold;
 }
 
 .page-enter-active,
@@ -99,11 +54,11 @@ pre > code.hljs {
 }
 
 a {
-  @apply .text-blue-600;
+  @apply text-blue-500;
 }
 
 a:hover {
-  @apply .text-blue-800;
+  @apply text-blue-700;
 }
 
 a.fancy-underline {
@@ -123,7 +78,7 @@ a.fancy-underline:before {
   transform: scaleX(0);
   -webkit-transition: all 0.20s ease-in-out 0s;
   transition: all 0.20s ease-in-out 0s;
-  @apply .bg-blue-800;
+  @apply bg-blue-700;
 }
 
 a.fancy-underline:hover:before {
@@ -137,11 +92,11 @@ a.fancy-underline:hover:before {
 }
 
 .aside-list {
-  @apply .px-4;
+  @apply px-4;
 }
 
 .aside-list li {
-  @apply .py-3 .border-b .border-gray-200;
+  @apply py-3 border-b border-gray-200;
 }
 
 .headshot {
@@ -185,17 +140,4 @@ a.fancy-underline:hover:before {
   box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 2px 2px rgba(0,0,0,0.09), 0 4px 4px rgba(0,0,0,0.08), 0 8px 8px rgba(0,0,0,0.07), 0 16px 16px rgba(0,0,0,0.06), 0 32px 32px rgba(0,0,0,0.05);
 }
 
-/**
- * Here you would add any custom utilities you need that don't come out of the
- * box with Tailwind.
- *
- * Example :
- *
- * .bg-pattern-graph-paper { ... }
- * .skew-45 { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "utilities/background-patterns";
- * @import "utilities/skew-transforms";
- */
+@tailwind utilities;

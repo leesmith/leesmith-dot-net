@@ -1,48 +1,42 @@
 export default {
-  mode: 'universal',
-  /*
-  ** Headers of the page
-  */
+  // Target: https://go.nuxtjs.dev/config-target
+  target: 'static',
+
+  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    title: 'LeeSmith.net',
     htmlAttrs: {
       lang: 'en'
     },
-    title: 'LeeSmith.net',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Personal site for Lee Smith'
-      }
+      { hid: 'description', name: 'description', content: 'Personal site for Lee Smith' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    link: [{ rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }
+    ]
   },
-  /*
-  ** Customize the progress bar color
-  */
-  loading: { color: '#209cee' },
-  /*
-  ** Global CSS
-  */
+
+  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/css/tailwind.css',
     '~/node_modules/highlight.js/styles/atom-one-dark.css',
   ],
-  /*
-  ** Plugins to load before mounting the App
-  */
+
+  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['~/plugins/vue-highlightjs'],
-  /*
-  ** Nuxt.js dev-moduleModules
-  */
+
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  components: true,
+
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/tailwindcss',
   ],
-  /*
-  ** Nuxt.js modules
-  */
+
+  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     [
       'nuxt-fontawesome',
@@ -64,23 +58,13 @@ export default {
         ]
       }
     ],
-    'nuxt-purgecss'
   ],
-  purgeCSS: {
-    whitelistPatterns: [/-enter/, /-leave/, /svg-inline/, /hljs/]
-  },
-  /*
-  ** Build configuration
-  */
+
+  // purgeCSS: {
+  //   whitelistPatterns: [/-enter/, /-leave/, /svg-inline/, /hljs/]
+  // },
+
+  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    postcss: {
-      plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
-      }
-    },
-    extractCSS: true,
-    extend(config, ctx) {
-    }
   }
 }
