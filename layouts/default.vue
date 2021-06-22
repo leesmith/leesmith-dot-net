@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="h-32 sm:h-48 md:h-64">
-      <div class="container mx-auto h-full p-4">
+      <div class="container mx-auto xl:max-w-6xl h-full p-4">
         <div class="inline-flex items-center h-full">
           <nuxt-link to="/" class="flex-1">
             <h1 class="site-title">Lee Smith</h1>
@@ -9,7 +9,7 @@
         </div>
       </div>
     </header>
-    <div class="container mx-auto px-4 mb-16">
+    <div class="container mx-auto xl:max-w-6xl px-4 mb-16">
       <main class="bg-white rounded-lg -mt-8 smooth-shadow-2xl p-4 md:p-6">
         <div class="md:flex">
           <div class="md:w-3/4">
