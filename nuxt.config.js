@@ -14,7 +14,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Personal site for Lee Smith' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/icon_64x64.png' },
       { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }
     ]
   },
